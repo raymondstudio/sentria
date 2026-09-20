@@ -1,5 +1,8 @@
 # Technical write-up
 
+**Live Application:** [https://sentria-app.vercel.app](https://sentria-app.vercel.app)  
+**GitHub Repository:** [https://github.com/raymondstudio/sentria](https://github.com/raymondstudio/sentria)
+
 ## Sentria: An AI-assisted incident triage system for unstructured cybersecurity reports
 
 ### 1. Problem

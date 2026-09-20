@@ -6,6 +6,8 @@
 
 Turn messy security reports into structured incidents that security teams can understand, prioritize, and act on.
 
+**Live Application:** [sentria-app.vercel.app](https://sentria-app.vercel.app) | **GitHub:** [raymondstudio/sentria](https://github.com/raymondstudio/sentria)
+
 <br />
 
 [![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)](https://nextjs.org/)
