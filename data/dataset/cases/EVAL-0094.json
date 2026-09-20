@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0094",
+  "report": "I am the bursar. We received a second request this week appearing to come from senior management asking for urgent fund transfer. Last week we almost transferred N2M. Today the email came from registrar.payments@university-admin-ng.com. Same domain as previous fraudulent email. I have not acted on this but reporting urgently.",
+  "source": "EMAIL",
+  "clusterGroup": "CLUSTER-BEC-005"
+}

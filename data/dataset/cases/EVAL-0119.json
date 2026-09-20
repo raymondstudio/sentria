@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0119",
+  "report": "I discovered that a terminated IT contractor still has active VPN credentials. He has been connecting remotely for two months after his contract ended. Audit logs show he has been accessing the HR system and finance directory.",
+  "source": "SOC_ALERT"
+}

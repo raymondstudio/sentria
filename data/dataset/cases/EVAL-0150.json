@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0150",
+  "report": "Firewall log analysis reveals exfiltration pattern: 2.3GB of data transferred to external IP 45.76.123.210 over port 443 between 01:00 and 03:00 on multiple nights this week. Source host: DBSERVER-01. Compressed archive format detected in traffic analysis.",
+  "source": "SOC_ALERT"
+}

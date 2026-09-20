@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0074",
+  "report": "Finance team received fraudulent invoice from invoice@cleantech-limited-ng.xyz. The invoice asks us to pay to a new account. We have verified this is not from our legitimate vendor.",
+  "source": "EMAIL",
+  "metadata": {}
+}

@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0113",
+  "report": "All files on the registrar's server now have .STOP extension. A ransom note \"!!! IMPORTANT !!!.txt\" has appeared. Demands $800 in Bitcoin to wallet: 1A1zP1eP5QGefi2DMPTfTL5SLmv7Divf. Backup system was also encrypted. All student records for 2024-2026 may be lost.",
+  "source": "SOC_ALERT",
+  "clusterGroup": "CLUSTER-RANSOM-007"
+}

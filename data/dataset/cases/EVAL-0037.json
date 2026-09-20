@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0037",
+  "report": "Suspicious link received via WhatsApp: uniben-student-portal.tk/verify/login. The message says my account will be blocked. I did not click. Reporting as suspicious.",
+  "source": "WHATSAPP",
+  "metadata": {}
+}

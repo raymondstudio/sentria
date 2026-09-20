@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0054",
+  "report": "Strange program found on my computer: win_svc32.exe. CPU usage is very high. Outbound connections to 192.99.36.25 observed. Windows Defender detected it but could not quarantine.",
+  "source": "USER_REPORT",
+  "metadata": {}
+}

@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0148",
+  "report": "Phishing attempt targeting BUK students. Fake portal link: verify-now.xyz/student-id-check. Identical to phishing campaign reported last week. Estimated 50+ students affected.",
+  "source": "SOC_ALERT",
+  "clusterGroup": "CLUSTER-PHISH-001"
+}

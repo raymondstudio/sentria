@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0051",
+  "report": "Strange program found on my computer: chrome_update.exe. CPU usage is very high. Outbound connections to 91.234.55.10 observed. Windows Defender detected it but could not quarantine.",
+  "source": "USER_REPORT",
+  "metadata": {}
+}

@@ -1,0 +1,9 @@
+{
+  "caseId": "EVAL-0009",
+  "report": "My university email account has been compromised. Someone changed my password yesterday at 11:43pm and I was logged out of all devices. I did not initiate this. I had clicked a link earlier that day that asked me to verify my account. My email is a student email ending in @students.example-university.edu.ng. Please help me regain access.",
+  "source": "HELPDESK",
+  "clusterGroup": "CLUSTER-ATO-003",
+  "metadata": {
+    "affectedSystem": "University email"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0137",
+  "report": "Campus network is under DDoS attack. Incoming traffic: 40Gbps from multiple source IPs across different countries. Our upstream provider has confirmed the attack. University website, student portal, and email server are all unreachable. Attack started at 09:15am. Source IPs include: 104.21.0.0/16 range (likely botnet).",
+  "source": "SOC_ALERT"
+}

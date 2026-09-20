@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0102",
+  "report": "Credential harvesting page discovered at http://firs-taxpayer-portal.com/login. Mimics the FIRS tax portal. Multiple civil servants have reported receiving links via email and SMS directing them to this page.",
+  "source": "USER_REPORT"
+}

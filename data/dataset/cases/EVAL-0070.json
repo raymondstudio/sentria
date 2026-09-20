@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0070",
+  "report": "Finance team received fraudulent invoice from billing@apex-supplies-ng.net. The invoice asks us to pay to a new account. We have verified this is not from our legitimate vendor.",
+  "source": "EMAIL",
+  "metadata": {}
+}

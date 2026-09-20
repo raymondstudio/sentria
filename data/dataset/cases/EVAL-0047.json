@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0047",
+  "report": "Suspicious link received via WhatsApp: student-portal-kogi.net/renew/login. The message says my account will be blocked. I did not click. Reporting as suspicious.",
+  "source": "WHATSAPP",
+  "metadata": {}
+}

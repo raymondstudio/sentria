@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0138",
+  "report": "Our examination portal went down during the CBT exam session. 500 students were mid-exam when the portal became unavailable. Server logs show abnormal traffic spike. Could be a DoS attack or infrastructure failure. We need this investigated immediately.",
+  "source": "SOC_ALERT"
+}

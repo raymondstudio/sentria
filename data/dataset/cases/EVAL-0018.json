@@ -1,0 +1,9 @@
+{
+  "caseId": "EVAL-0018",
+  "report": "Our department server containing staff performance appraisals was accessed without authorization. The access logs show a connection from IP 192.168.45.23 at 2:14am on the 14th. The intruder appears to have downloaded files from the HR folder. Staff names, salary information, and disciplinary records may have been exposed.",
+  "source": "SOC_ALERT",
+  "metadata": {
+    "affectedSystem": "HR server",
+    "department": "Human Resources"
+  }
+}

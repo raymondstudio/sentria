@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0101",
+  "report": "Email from support@paystack-verification.com asking merchants to reverify their accounts or face suspension. Link in email goes to a fake Paystack login page. Several merchants in our cooperative have already entered their credentials.",
+  "source": "USER_REPORT"
+}

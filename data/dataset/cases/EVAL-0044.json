@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0044",
+  "report": "SMS message received: \"Your portal will expire. Verify now: unizik-portal-ng.com/verify\". I clicked and entered details before realising it was fake.",
+  "source": "SMS",
+  "metadata": {}
+}

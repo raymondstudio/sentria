@@ -1,0 +1,8 @@
+{
+  "caseId": "EVAL-0012",
+  "report": "I downloaded what I thought was a PDF of our course material from a Telegram group. After opening it, my computer became very slow. I see a program called \"svchost_helper.exe\" running in task manager that was not there before. My antivirus (Windows Defender) flagged it as Trojan:Win32/Wacatac.B!ml but said it could not remove it. IP address in the connection list: 45.33.32.156.",
+  "source": "USER_REPORT",
+  "metadata": {
+    "affectedSystem": "Student laptop"
+  }
+}

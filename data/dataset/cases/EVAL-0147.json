@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0147",
+  "report": "I got message on phone say verify my student portal or account go block. I click the link e show. The website looks like school portal but I notice URL no correct after I don enter my details. URL: http://bayero-student-portal.verify-now.xyz/portal-update",
+  "source": "WHATSAPP",
+  "clusterGroup": "CLUSTER-PHISH-001"
+}

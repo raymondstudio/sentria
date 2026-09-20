@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0076",
+  "report": "Finance team received fraudulent invoice from finance@global-partners-ng.com. The invoice asks us to pay to a new account. We have verified this is not from our legitimate vendor.",
+  "source": "EMAIL",
+  "metadata": {}
+}

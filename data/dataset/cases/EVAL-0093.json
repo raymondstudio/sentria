@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0093",
+  "report": "Finance department received urgent email from \"Vice Chancellor\" asking for N5M wire transfer to a new account. Sender email: vc.urgent@university-admin-ng.com. The real VC confirmed he did not send this. Three similar emails were received in one week targeting different departments.",
+  "source": "EMAIL",
+  "clusterGroup": "CLUSTER-BEC-005"
+}

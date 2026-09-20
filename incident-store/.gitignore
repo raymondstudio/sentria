@@ -1,0 +1,4 @@
+# Sentria runtime incident store
+# This directory is excluded from version control.
+# Contents are created at runtime by the FileIncidentRepository.
+!.gitkeep

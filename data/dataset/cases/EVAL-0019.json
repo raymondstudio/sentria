@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0019",
+  "report": "Server admin here. I noticed unusual login attempts on our web server at 3am this morning. IP address 203.0.113.77 made over 500 login attempts within 10 minutes before one succeeded. The attacker used the account \"webmaster\" with what appears to be a brute force. They accessed the /var/www/uploads directory. Server is nginx 1.18 on Ubuntu 20.04.",
+  "source": "SOC_ALERT",
+  "metadata": {}
+}

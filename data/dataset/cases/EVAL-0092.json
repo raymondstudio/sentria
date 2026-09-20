@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0092",
+  "report": "The VC's email account appears to have been compromised. We received an internal email purportedly from the VC asking the bursary to transfer N3,000,000 to a new vendor account immediately and discreetly. The email came from vc-admin@vc-university-ng.com but the real VC email domain is university.edu.ng. This looks like Business Email Compromise.",
+  "source": "EMAIL",
+  "clusterGroup": "CLUSTER-BEC-005"
+}

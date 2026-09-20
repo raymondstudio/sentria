@@ -1,0 +1,7 @@
+{
+  "caseId": "EVAL-0008",
+  "report": "Someone is impersonating our HR payroll system. Email: finance-update@hr-payroll-ng.com. Three staff in accounts department have already submitted banking credentials. Financial fraud risk is high.",
+  "source": "SOC_ALERT",
+  "clusterGroup": "CLUSTER-PHISH-002",
+  "metadata": {}
+}

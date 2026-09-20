@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0107",
+  "report": "After inserting a USB drive I found near the library, my computer began showing strange behaviour. A new process \"autorun_service.exe\" appeared. My antivirus was disabled automatically. Network traffic to IP 185.220.101.45 is observed.",
+  "source": "SOC_ALERT"
+}

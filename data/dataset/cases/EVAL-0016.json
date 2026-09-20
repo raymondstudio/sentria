@@ -1,0 +1,7 @@
+{
+  "caseId": "EVAL-0016",
+  "report": "Entire computer lab in Faculty of Engineering is affected. All workstations show ransom message. Bitcoin payment demanded. Files are encrypted with .WNCRYPT extension. Campus network may be compromised. Approximately 40 machines affected.",
+  "source": "SOC_ALERT",
+  "clusterGroup": "CLUSTER-RANSOM-004",
+  "metadata": {}
+}

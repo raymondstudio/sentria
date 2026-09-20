@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0060",
+  "report": "Login alert from London on my account. I am not in London. Someone else is using my account. I have changed my password but need to know if any data was accessed.",
+  "source": "USER_REPORT",
+  "metadata": {}
+}

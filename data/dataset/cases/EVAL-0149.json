@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0149",
+  "report": "SIEM alert: Multiple failed authentication attempts followed by successful login for account ID 4821 (mapped to user adaobi.okafor). Pre-authentication failed 47 times from IP 192.0.2.55. Successful login at 04:22 UTC. Post-auth activity: accessed records for 200 students not in the authenticated user's course portfolio.",
+  "source": "SOC_ALERT"
+}

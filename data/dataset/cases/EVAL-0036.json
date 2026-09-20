@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0036",
+  "report": "I received an email asking me to verify my ABU Zaria student account. The link goes to portal-verify-ng.com/login. I clicked it and it asked for my username and password. I think I made a mistake by entering my details.",
+  "source": "EMAIL",
+  "metadata": {}
+}

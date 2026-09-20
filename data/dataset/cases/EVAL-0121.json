@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0121",
+  "report": "Staff salary details for 200 employees were accidentally emailed to a distribution list including students. The spreadsheet contains staff names, BVN, account numbers and monthly salary. The email was sent by the HR officer in error.",
+  "source": "SOC_ALERT"
+}

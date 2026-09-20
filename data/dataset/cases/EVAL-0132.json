@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0132",
+  "report": "A student loan portal is being impersonated. Website: http://nelfund-student-loan-ng.com/apply. It collects NIN, BVN, bank account, and processing fee of N5,000. This is not the real NELFUND portal.",
+  "source": "USER_REPORT"
+}

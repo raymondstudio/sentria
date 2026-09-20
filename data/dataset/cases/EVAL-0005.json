@@ -1,0 +1,7 @@
+{
+  "caseId": "EVAL-0005",
+  "report": "Urgent: fake BUK portal page spotted. Students are entering their login credentials on a fake website. The URL contains \"verify-now.xyz\". ICT has NOT sent any such email. At least 15 students have reported clicking the link. Please block this domain immediately.",
+  "source": "SOC_ALERT",
+  "clusterGroup": "CLUSTER-PHISH-001",
+  "metadata": {}
+}

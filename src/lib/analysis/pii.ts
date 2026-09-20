@@ -110,7 +110,6 @@ const NAME_CONTEXT_PATTERNS = [
 
 function detectPersonNames(text: string): PiiMatch[] {
   const results: PiiMatch[] = [];
-  const lower = text.toLowerCase();
 
   // Pattern 1: Context-driven name detection
   for (const pattern of NAME_CONTEXT_PATTERNS) {

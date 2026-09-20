@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0038",
+  "report": "My colleague showed me a fake UNILAG login page at unilag-portal-update.xyz/renew. The page looks real but the URL is wrong. At least five students from our hostel received the same message.",
+  "source": "USER_REPORT",
+  "metadata": {}
+}

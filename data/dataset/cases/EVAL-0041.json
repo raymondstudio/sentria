@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0041",
+  "report": "I received an email asking me to verify my FUTA student account. The link goes to futa-portal-confirm.net/login. I clicked it and it asked for my username and password. I think I made a mistake by entering my details.",
+  "source": "EMAIL",
+  "metadata": {}
+}

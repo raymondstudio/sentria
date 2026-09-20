@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-09-20T16:29:40.654Z",
+  "totalCases": 159,
+  "byType": {
+    "PHISHING": 40,
+    "ACCOUNT_TAKEOVER": 15,
+    "MALWARE": 21,
+    "RANSOMWARE": 7,
+    "DATA_BREACH": 8,
+    "UNAUTHORIZED_ACCESS": 11,
+    "INSIDER_THREAT": 4,
+    "SOCIAL_ENGINEERING": 9,
+    "FRAUD": 28,
+    "SUSPICIOUS_LINK": 2,
+    "DENIAL_OF_SERVICE": 3,
+    "OTHER": 11
+  },
+  "bySeverity": {
+    "HIGH": 59,
+    "MEDIUM": 34,
+    "CRITICAL": 50,
+    "LOW": 16
+  },
+  "byRouting": {
+    "EMAIL_SECURITY": 24,
+    "IDENTITY_SECURITY": 17,
+    "SOC": 16,
+    "INCIDENT_RESPONSE": 4,
+    "LEGAL_PRIVACY": 3,
+    "NETWORK_SECURITY": 2,
+    "MANAGEMENT": 2,
+    "FRAUD_TEAM": 16,
+    "IT_SUPPORT": 7
+  },
+  "clusters": {
+    "CLUSTER-PHISH-001": 7,
+    "CLUSTER-PHISH-002": 3,
+    "CLUSTER-ATO-003": 3,
+    "CLUSTER-RANSOM-004": 1,
+    "CLUSTER-BEC-005": 3,
+    "CLUSTER-EXFIL-006": 2,
+    "CLUSTER-RANSOM-007": 2
+  },
+  "withPii": 27,
+  "duplicates": 3
+}

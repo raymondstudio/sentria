@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0151",
+  "report": "TLS certificate transparency log monitoring detected: new certificate issued for student-portal.university-edu-ng.xyz. This domain is not owned by the university and appears to be a lookalike for credential harvesting.",
+  "source": "SOC_ALERT"
+}

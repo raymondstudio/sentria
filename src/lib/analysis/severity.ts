@@ -15,22 +15,6 @@
 import { IncidentType, IncidentSeverity } from '@/types/incident';
 import type { SeverityResult, SeverityFactor, ClassificationResult } from './types';
 
-// ─── Factor weights (must sum to 100) ────────────────────────────────────────
-
-const FACTOR_DEFINITIONS: Array<{
-  name: string;
-  maxPoints: number;
-  description: string;
-}> = [
-  { name: 'credential_compromise', maxPoints: 25, description: 'Credentials submitted to unauthorised domain' },
-  { name: 'active_compromise', maxPoints: 20, description: 'Evidence of ongoing unauthorised access' },
-  { name: 'system_criticality', maxPoints: 15, description: 'Critical system involved (payroll, identity, finance)' },
-  { name: 'affected_population', maxPoints: 15, description: 'Number of users/records affected' },
-  { name: 'ransomware', maxPoints: 15, description: 'Ransomware or encryption indicators' },
-  { name: 'financial_impact', maxPoints: 5, description: 'Evidence of financial loss or risk' },
-  { name: 'data_exposure', maxPoints: 5, description: 'Sensitive data exposed or at risk' },
-];
-// Total: 100
 
 // ─── Signal lists for each factor ────────────────────────────────────────────
 

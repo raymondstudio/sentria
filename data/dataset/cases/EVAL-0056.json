@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0056",
+  "report": "EDR alert: malicious file ms_office_svc.exe detected. Hash: 104.21.45.100. File was dropped by a suspicious macro in a Word document.",
+  "source": "USER_REPORT",
+  "metadata": {}
+}

@@ -1,0 +1,7 @@
+{
+  "caseId": "EVAL-0010",
+  "report": "My student email account is showing activity I did not perform. Sent emails in my name to multiple people from my account at 12:01am. I was asleep. Password was changed without my knowledge. My account may have been accessed via a phishing link I clicked two days ago.",
+  "source": "USER_REPORT",
+  "clusterGroup": "CLUSTER-ATO-003",
+  "metadata": {}
+}

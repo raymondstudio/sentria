@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0013",
+  "report": "Unknown process on computer. Filename: update_service32.exe. It started after I opened an attachment in an email from unknown sender. My files are still accessible but CPU usage is at 90% constantly. Windows Defender is disabled somehow. The email attachment was called \"Assignment_Solutions.exe\". I am in the department of computer science.",
+  "source": "USER_REPORT",
+  "metadata": {}
+}

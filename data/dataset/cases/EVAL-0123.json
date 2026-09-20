@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0123",
+  "report": "Someone called our IT helpdesk claiming to be a lecturer who forgot their password. They gave the correct name of a real lecturer but could not answer security questions. We did not reset the password but are reporting this social engineering attempt.",
+  "source": "USER_REPORT"
+}

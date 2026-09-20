@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0091",
+  "report": "Ransomware message appeared on 12 library computers simultaneously. All files show .crypt extension. Ransom note demands 2 Bitcoin. Library is closed pending investigation.",
+  "source": "USER_REPORT",
+  "metadata": {}
+}

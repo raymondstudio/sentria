@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0095",
+  "report": "Abnormal after-hours access detected on staff account aisha.ibrahim. Accessed student database between 2am and 4am. Downloaded 14,000 student records as CSV. Account shows login from IP 41.58.123.45 which geolocates to a foreign IP range. Account password was changed 6 hours before the access.",
+  "source": "SOC_ALERT",
+  "clusterGroup": "CLUSTER-EXFIL-006"
+}

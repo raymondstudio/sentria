@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0118",
+  "report": "Administrator account on student portal was accessed from an unrecognized IP address: 5.188.86.172. Admin logged in at 3:47am without multifactor authentication. Several student grade records were accessed and may have been modified.",
+  "source": "SOC_ALERT"
+}

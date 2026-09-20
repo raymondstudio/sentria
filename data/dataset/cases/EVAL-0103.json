@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0103",
+  "report": "My staff received an email with subject \"URGENT: Salary Account Update Required\" from payroll-update@staff-ippis-ng.com. Any staff who clicks is taken to a form requesting account numbers and bank login details.",
+  "source": "USER_REPORT"
+}

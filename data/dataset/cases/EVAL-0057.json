@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0057",
+  "report": "Strange program found on my computer: svchost_ng.exe. CPU usage is very high. Outbound connections to 176.9.89.202 observed. Windows Defender detected it but could not quarantine.",
+  "source": "USER_REPORT",
+  "metadata": {}
+}

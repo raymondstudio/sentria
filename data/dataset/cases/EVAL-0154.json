@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0154",
+  "report": "Privilege escalation detected: standard user account achieved SYSTEM-level privileges on FILESERVER-03. Exploit code matches CVE-2026-12345. Attacker added new admin account: \"svcaccount_backup\". Account creation logged at 02:19.",
+  "source": "SOC_ALERT"
+}

@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0063",
+  "report": "Login alert from Accra on my account. I am not in Accra. Someone else is using my account. I have changed my password but need to know if any data was accessed.",
+  "source": "USER_REPORT",
+  "metadata": {}
+}

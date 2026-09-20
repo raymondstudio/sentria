@@ -1,0 +1,7 @@
+{
+  "caseId": "EVAL-0004",
+  "report": "Student portal phishing link received via SMS. Link: bayero-student-portal.verify-now.xyz. At least 6 students in my hostel got the same message. None of us clicked. Reporting to campus ICT.",
+  "source": "USER_REPORT",
+  "clusterGroup": "CLUSTER-PHISH-001",
+  "metadata": {}
+}

@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0110",
+  "report": "Keylogger suspected on finance department computer. Staff noticed banking credentials were used for an unauthorized transaction shortly after using the computer. Suspicious process: klog32.dll loaded into explorer.exe.",
+  "source": "SOC_ALERT"
+}

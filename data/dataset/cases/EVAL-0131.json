@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0131",
+  "report": "Our purchasing department received a fake invoice from a supplier. The bank details on the invoice had been changed. We transferred N780,000 to the fraudulent account before noticing the discrepancy. We have reported to the bank.",
+  "source": "USER_REPORT"
+}

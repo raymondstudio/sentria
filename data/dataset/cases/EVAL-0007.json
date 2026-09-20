@@ -1,0 +1,7 @@
+{
+  "caseId": "EVAL-0007",
+  "report": "All finance staff received a suspicious email asking us to update payroll details. The email pretends to be from IPPIS. The sender address is finance-update@hr-payroll-ng.com. Several colleagues have already submitted their account details. I have not yet done so.",
+  "source": "EMAIL",
+  "clusterGroup": "CLUSTER-PHISH-002",
+  "metadata": {}
+}

@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0042",
+  "report": "Suspicious link received via WhatsApp: lasu-verify-now.com/account/login. The message says my account will be blocked. I did not click. Reporting as suspicious.",
+  "source": "WHATSAPP",
+  "metadata": {}
+}

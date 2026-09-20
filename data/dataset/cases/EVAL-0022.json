@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0022",
+  "report": "I received a phone call from someone claiming to be from the university ICT helpdesk. They said there was a problem with my account and asked me to provide my password so they could fix it. I gave them my password before realising this is not how ICT works. My phone number is 08012345678.",
+  "source": "PHONE",
+  "metadata": {}
+}

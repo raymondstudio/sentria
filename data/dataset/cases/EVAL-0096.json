@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0096",
+  "report": "Large volume of student data was found posted on a dark web forum. The data contains 14,000 records with student names, matric numbers, home addresses, phone numbers, and CGPA. The data appears to be recent (2026) from our institution. Investigating possible insider exfiltration.",
+  "source": "SOC_ALERT",
+  "clusterGroup": "CLUSTER-EXFIL-006"
+}

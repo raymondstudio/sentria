@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0020",
+  "report": "A former staff member whose contract ended last month is still able to log into the staff intranet. His user account \"john.doe.staff\" was supposed to have been disabled but access was not revoked. He accessed the student examination results database yesterday according to audit logs.",
+  "source": "HELPDESK",
+  "metadata": {}
+}

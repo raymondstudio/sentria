@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0109",
+  "report": "IT admin found cryptominer on 6 lab computers. Process: xmrig.exe running on all machines. CPU usage at 95%. External connections to pool.minexmr.com. All machines are in the Faculty of Science computer lab.",
+  "source": "SOC_ALERT"
+}

@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0024",
+  "report": "I received a WhatsApp message with a link: https://bit.ly/3xAbCdE. The message says \"Claim your NECO result\" but I already have my results. I did not click. Is this safe?",
+  "source": "WHATSAPP",
+  "metadata": {}
+}

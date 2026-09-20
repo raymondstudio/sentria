@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0078",
+  "report": "Finance team received fraudulent invoice from payment@logistics-fast-ng.net. The invoice asks us to pay to a new account. We have verified this is not from our legitimate vendor.",
+  "source": "EMAIL",
+  "metadata": {}
+}

@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0117",
+  "report": "Our web application firewall detected SQL injection attempts from 103.21.244.0. The attacker was targeting the student information system login page at /sis/login.php. No successful breach confirmed but logs show 500+ attempts.",
+  "source": "SOC_ALERT"
+}

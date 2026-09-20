@@ -1,0 +1,8 @@
+{
+  "caseId": "EVAL-0026",
+  "report": "I am reporting an invoice fraud incident. Our department received an email purporting to be from our regular supplier (Apex Office Supplies) asking us to update the bank account we pay invoices to. We made a payment of N1,200,000 to the new account before confirming with the real supplier that they had not sent this email. The fraudulent email was: billing@apex-office-supplies-ng.com (note the -ng suffix, the real domain is apex-officesupplies.com).",
+  "source": "EMAIL",
+  "metadata": {
+    "affectedSystem": "Finance system"
+  }
+}

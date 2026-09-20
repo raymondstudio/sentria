@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0116",
+  "report": "SSH brute force detected against server 196.201.214.15. Source IP 89.248.165.42 attempted 2,300 login attempts in 5 minutes. One attempt succeeded using weak credentials. Attacker ran reconnaissance commands before session was terminated.",
+  "source": "SOC_ALERT"
+}

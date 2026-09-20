@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0125",
+  "report": "Fake tech support pop-up appeared on several computers claiming the system has a virus and instructing users to call a number: +1-800-555-0199. Two staff members called the number and were instructed to install remote access software. The software installed was AnyDesk.",
+  "source": "USER_REPORT"
+}

@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0120",
+  "report": "Medical records of students who visited the campus clinic were found exposed on a publicly accessible server at http://clinic.university.edu.ng/records/. The directory was not password protected. Approximately 800 student health records are visible.",
+  "source": "SOC_ALERT"
+}

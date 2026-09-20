@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0028",
+  "report": "Our university website (www.example-university.edu.ng) has been unreachable since 9am this morning. Server logs show incoming traffic at 50,000 requests per second from multiple source IPs. This appears to be a distributed denial of service attack. Major student result checking portal is down during exam period.",
+  "source": "SOC_ALERT",
+  "metadata": {}
+}

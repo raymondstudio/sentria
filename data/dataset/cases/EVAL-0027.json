@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0027",
+  "report": "My BVN was used to open a bank account without my knowledge. I received a bank notification for a new account I did not open. When I called the bank, they confirmed an account was opened using my BVN and date of birth. I have never shared this information. My BVN is 12345678901. My date of birth is 12/05/1998.",
+  "source": "USER_REPORT",
+  "metadata": {}
+}

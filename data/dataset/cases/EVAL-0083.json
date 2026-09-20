@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0083",
+  "report": "Received a chain message saying forward to 10 people or lose account. Is this real?",
+  "source": "USER_REPORT",
+  "metadata": {}
+}

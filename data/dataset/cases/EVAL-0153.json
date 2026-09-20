@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0153",
+  "report": "DNS query log shows repeated lookups for known C2 domains from internal hosts: cobaltstrike-c2-beacon.evil-domain.com, update.malware-hosted.net. At least 8 internal IPs are beaconing. Potential APT compromise.",
+  "source": "SOC_ALERT"
+}

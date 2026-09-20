@@ -1,0 +1,7 @@
+{
+  "caseId": "EVAL-0002",
+  "report": "I got a message on my phone saying my BUK student portal login will expire. It had a link that said click here to renew. The link was: http://bayero-student-portal.verify-now.xyz/renew. I did not click it but I am reporting it anyway because my friend clicked it and entered his details.",
+  "source": "WHATSAPP",
+  "clusterGroup": "CLUSTER-PHISH-001",
+  "metadata": {}
+}

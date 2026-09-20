@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0152",
+  "report": "PowerShell execution policy bypass detected on WORKSTATION-112. Command: powershell.exe -ExecutionPolicy Bypass -WindowStyle Hidden -EncodedCommand <base64_payload>. Parent process: winword.exe. Indicates malicious macro execution.",
+  "source": "SOC_ALERT"
+}

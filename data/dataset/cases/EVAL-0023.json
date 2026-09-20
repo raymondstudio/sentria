@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0023",
+  "report": "Somebody called me saying they are from the bank technical team. They told me that my account has suspicious activity and they need my ATM PIN to block it. I give them the PIN because I was afraid. Later I see money removed from my account. The amount removed was N250,000.",
+  "source": "PHONE",
+  "metadata": {}
+}

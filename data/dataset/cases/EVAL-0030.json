@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0030",
+  "report": "I lost my phone that had my work email configured. I reported it to the phone company and they blocked the SIM. But the phone was not encrypted and I am worried someone could access my emails. There is no sensitive data on the phone as far as I know.",
+  "source": "USER_REPORT",
+  "metadata": {}
+}

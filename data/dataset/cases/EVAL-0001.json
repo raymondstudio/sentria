@@ -1,0 +1,10 @@
+{
+  "caseId": "EVAL-0001",
+  "report": "I received an email from what looked like the ICT department of Bayero University. The email said my student portal account would be suspended if I did not verify my details within 24 hours. There was a link in the email: http://bayero-student-portal.verify-now.xyz/login. When I clicked it, it took me to a page that looked exactly like the real portal. I entered my matric number and password before realising the URL was wrong. Please help.",
+  "source": "EMAIL",
+  "clusterGroup": "CLUSTER-PHISH-001",
+  "metadata": {
+    "affectedSystem": "Student portal",
+    "department": "Student Affairs"
+  }
+}

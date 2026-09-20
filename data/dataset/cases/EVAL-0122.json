@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0122",
+  "report": "Database backup file found on a GitHub repository: university_students_2026_backup.sql. The file was accidentally committed by a developer. It contains 12,000 student records including personal details. The repository is public.",
+  "source": "SOC_ALERT"
+}

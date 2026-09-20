@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0055",
+  "report": "After downloading course materials, a file called update_helper.exe appeared in my startup folder. My browser homepage changed. System is slow.",
+  "source": "USER_REPORT",
+  "metadata": {}
+}

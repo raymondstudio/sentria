@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0098",
+  "report": "Received phishing SMS: \"Your GTBank account has been restricted. Click to unlock: http://gtb-unlock.net/verify\". Link goes to a fake banking page. I entered my internet banking password before realising.",
+  "source": "USER_REPORT"
+}

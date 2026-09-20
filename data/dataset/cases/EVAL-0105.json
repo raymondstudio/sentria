@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0105",
+  "report": "Phishing page detected at http://nin-enrollment-ng.com/verify. Mimics the NIN registration portal. Collects NIN, date of birth, and phone numbers. This could enable identity theft at scale.",
+  "source": "USER_REPORT"
+}

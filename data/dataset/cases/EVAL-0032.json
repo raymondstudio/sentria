@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0032",
+  "report": "Received email with attachment \"Invoice_Q3_2026.exe\". Did not open the attachment. Sender: accounting-dept@univer-sity-payments.com. The domain looks suspicious. The email claims to be from our finance department but the domain is wrong.",
+  "source": "EMAIL",
+  "metadata": {}
+}

@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0049",
+  "report": "SMS message received: \"Your portal will expire. Verify now: uniuyo-ng.com/student-verify\". I clicked and entered details before realising it was fake.",
+  "source": "SMS",
+  "metadata": {}
+}

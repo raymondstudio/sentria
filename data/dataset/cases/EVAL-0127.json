@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0127",
+  "report": "DLP alert: Staff member in the examination department printed 500 copies of exam questions 3 days before the scheduled exam date. Printing was done outside normal hours and from a personal account. The exam paper is for a final year engineering course.",
+  "source": "SOC_ALERT"
+}

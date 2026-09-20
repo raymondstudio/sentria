@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0112",
+  "report": "Worm spreading through campus network via SMB vulnerability. Identified host: 10.0.0.45. The worm creates copies of itself as \"system_update.exe\" on accessible shares. 14 machines already infected.",
+  "source": "SOC_ALERT"
+}

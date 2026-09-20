@@ -1,0 +1,5 @@
+{
+  "caseId": "EVAL-0106",
+  "report": "A colleague received an email asking to verify their academic credentials at credentials-verify-ng.com. The website asks for name, staff ID, and date of birth. The page is a lookalike for the university credential portal.",
+  "source": "USER_REPORT"
+}

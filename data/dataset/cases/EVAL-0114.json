@@ -1,0 +1,6 @@
+{
+  "caseId": "EVAL-0114",
+  "report": "Finance server encrypted. Extension: .phobos. Ransom: 3 Bitcoin. Backup drives were connected at time of infection and are also encrypted. Finance operations completely halted. Approximately 5 years of financial records affected.",
+  "source": "SOC_ALERT",
+  "clusterGroup": "CLUSTER-RANSOM-007"
+}
