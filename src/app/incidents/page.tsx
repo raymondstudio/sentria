@@ -38,14 +38,12 @@ function StatusBadge({ status }: { status: string }) {
   );
 }
 
-export default function IncidentsPage({
+export default async function IncidentsPage({
   searchParams,
 }: {
   searchParams: Promise<Record<string, string | undefined>>;
 }) {
-  // searchParams is a Promise in Next.js 15+; we access it synchronously here
-  // because this is a server component — Next.js will await it for us.
-  const params = searchParams as unknown as Record<string, string | undefined>;
+  const params = await searchParams;
 
   const severity = params.severity;
   const type = params.type;

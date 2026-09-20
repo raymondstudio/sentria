@@ -1,0 +1,33 @@
+{
+  "analysis": {
+    "incidentId": "INC-TEST",
+    "createdAt": "2026-09-20T21:26:00.000Z",
+    "updatedAt": "2026-09-20T21:26:00.000Z",
+    "originalReport": "Test report",
+    "incidentType": "PHISHING",
+    "typeConfidence": 0.9,
+    "severity": "HIGH",
+    "severityScore": 70,
+    "severityReasons": [
+      "test"
+    ],
+    "summary": "Test summary",
+    "technicalIndicators": [],
+    "piiDetections": [],
+    "sanitizedReport": "Test report",
+    "relatedIncidents": [],
+    "recommendedRoute": "SOC",
+    "routingReasoning": [
+      "test"
+    ],
+    "recommendedAction": "Test action",
+    "status": "NEW",
+    "statusHistory": [
+      {
+        "status": "NEW",
+        "timestamp": "2026-09-20T21:26:00.000Z"
+      }
+    ]
+  },
+  "priorityScore": 50
+}
