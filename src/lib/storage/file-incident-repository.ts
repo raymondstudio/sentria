@@ -15,6 +15,7 @@
 
 import fs from 'fs';
 import path from 'path';
+import os from 'os';
 
 import type { IncidentAnalysis, IncidentStatus } from '@/types/incident';
 import { IncidentType, IncidentSeverity, IncidentStatus as IncStatus } from '@/types/incident';
@@ -29,7 +30,10 @@ import type {
 
 // ─── Storage paths ────────────────────────────────────────────────────────────
 
-const STORE_ROOT = path.join(process.cwd(), 'incident-store');
+const isServerless = process.env.VERCEL === '1' || process.env.AWS_EXECUTION_ENV;
+const STORE_ROOT = isServerless 
+  ? path.join(os.tmpdir(), 'incident-store') 
+  : path.join(process.cwd(), 'incident-store');
 const INCIDENTS_DIR = path.join(STORE_ROOT, 'incidents');
 const META_FILE = path.join(STORE_ROOT, 'meta.json');
 
