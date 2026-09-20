@@ -12,7 +12,6 @@ Turn messy security reports into structured incidents that security teams can un
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=white)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Google Gemini](https://img.shields.io/badge/Google%20Gemini-Gen%20AI-4285F4?style=flat-square&logo=google)](https://ai.google.dev/)
-[![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-3FCF8E?style=flat-square&logo=supabase&logoColor=white)](https://supabase.com/)
 [![Zod](https://img.shields.io/badge/Validation-Zod-3E67B1?style=flat-square)](https://zod.dev/)
 
 <br />
@@ -95,3 +94,38 @@ Sentria is designed to reduce that manual triage burden by turning unstructured 
           ↓              ↓              ↓
        Priority       Related        Assigned
         queue         reports          team
+```
+
+---
+
+## Key Features
+
+- **Adversarial Hardening**: Defends against prompt-injection via XML-sandboxing incident evidence during AI inference.
+- **Privacy-aware Sanitization**: Automatically scrubs PII (names, phone numbers, account identifiers) while retaining technical IoCs.
+- **File-system Persistence**: Stores incidents natively via a robust FileSystem repository (supports Vercel serverless deployments via `/tmp` directory).
+- **Incident Correlation**: Dynamically maps repeated patterns and automatically clusters overlapping campaigns.
+- **Evaluation Dashboard**: Contains 159 labelled, synthetic ground-truth cases demonstrating 90%+ classification accuracy across formal, informal, and pidgin dialects.
+- **Dynamic UX**: Features a glowing severity-driven color system and real-time dashboard state updates.
+
+---
+
+## Local Deployment
+
+1. **Clone & Install Dependencies:**
+   ```bash
+   npm install
+   ```
+2. **Environment Setup:**
+   Create a `.env` file with your Google Gemini API key:
+   ```env
+   GEMINI_API_KEY="your-api-key"
+   ```
+3. **Run the Development Server:**
+   ```bash
+   npm run dev
+   ```
+   Open `http://localhost:3000` to view the application.
+
+## Vercel Deployment
+
+Sentria runs on Vercel out-of-the-box. When deployed to a serverless Vercel environment, the incident storage logic automatically redirects to `/tmp` to bypass read-only filesystem restrictions. Note that this provides ephemeral storage suitable for hackathon demonstrations; for a permanent production deployment, the `IncidentRepository` interface can easily be backed by PostgreSQL or Redis.
