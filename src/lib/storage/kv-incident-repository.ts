@@ -1,4 +1,8 @@
-import { kv } from '@vercel/kv';
+import { Redis } from '@upstash/redis';
+const kv = new Redis({
+  url: process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL || '',
+  token: process.env.KV_REST_API_TOKEN || process.env.UPSTASH_REDIS_REST_TOKEN || '',
+});
 import type { IncidentAnalysis, IncidentStatus } from '@/types/incident';
 import { IncidentType, IncidentSeverity, IncidentStatus as IncStatus } from '@/types/incident';
 import type { StoredIncidentSummary } from '../analysis/similarity';
