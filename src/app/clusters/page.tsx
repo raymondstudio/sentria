@@ -18,9 +18,9 @@ const SEVERITY_COLORS: Record<string, string> = {
   [IncidentSeverity.LOW]: 'text-slate-300 border-slate-600/40 bg-slate-700/20',
 };
 
-export default function ClustersPage() {
-  const metrics = incidentStore.getDashboardMetrics();
-  const allResult = incidentStore.list({ limit: 500 });
+export default async function ClustersPage() {
+  const metrics = await incidentStore.getDashboardMetrics();
+  const allResult = await incidentStore.list({ limit: 500 });
   const allIncidents = allResult.incidents;
 
   // Group incidents by clusterId

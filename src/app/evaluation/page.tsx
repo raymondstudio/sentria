@@ -75,8 +75,8 @@ function Bar({ value, max }: { value: number; max: number }) {
   );
 }
 
-export default function EvaluationPage() {
-  const metrics = incidentStore.getDashboardMetrics();
+export default async function EvaluationPage() {
+  const metrics = await incidentStore.getDashboardMetrics();
   const dataset = loadDatasetSummary();
   const answerKey = loadAnswerKey();
 

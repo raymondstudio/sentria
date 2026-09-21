@@ -13,7 +13,7 @@ function requestWithForm(form: FormData): NextRequest {
 }
 
 test('analyze returns a preview without saving it, then save persists it', async () => {
-  const before = incidentStore.count();
+  const initialCount = await incidentStore.count();
   const form = new FormData();
   form.set('report', 'I received an email asking me to verify my portal password at http://portal-verification-example.com/login.');
   form.set('source', 'EMAIL');
@@ -22,7 +22,7 @@ test('analyze returns a preview without saving it, then save persists it', async
   assert.equal(analysisResponse.status, 200);
   const preview = await analysisResponse.json();
   assert.equal(preview.incident.inputSource, 'TEXT');
-  assert.equal(incidentStore.count(), before);
+  assert.equal(await incidentStore.count(), initialCount);
 
   const saveResponse = await savePost(new NextRequest('http://localhost/api/incidents', {
     method: 'POST',
@@ -32,7 +32,7 @@ test('analyze returns a preview without saving it, then save persists it', async
   assert.equal(saveResponse.status, 201);
   const saved = await saveResponse.json();
   assert.equal(saved.incident.incidentId, preview.incident.incidentId);
-  assert.equal(incidentStore.count(), before + 1);
+  assert.equal(await incidentStore.count(), initialCount + 1);
 });
 
 test('analyze rejects an empty submission before invoking the pipeline', async () => {

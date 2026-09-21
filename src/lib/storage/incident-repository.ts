@@ -39,12 +39,12 @@ export interface ListFilters {
 }
 
 export interface IncidentRepository {
-  generateId(): string;
-  save(incident: IncidentAnalysis, priorityScore: number): void;
-  getById(id: string): IncidentAnalysis | null;
-  list(filters?: ListFilters): ListResult;
-  update(id: string, updates: { status?: IncidentStatus; notes?: string }): IncidentAnalysis | null;
-  getSummariesExcluding(excludeId: string): StoredIncidentSummary[];
-  getDashboardMetrics(): DashboardMetrics;
-  count(): number;
+  generateId(): Promise<string>;
+  save(incident: IncidentAnalysis, priorityScore: number): Promise<void>;
+  getById(id: string): Promise<IncidentAnalysis | null>;
+  list(filters?: ListFilters): Promise<ListResult>;
+  update(id: string, updates: { status?: IncidentStatus; notes?: string }): Promise<IncidentAnalysis | null>;
+  getSummariesExcluding(excludeId: string): Promise<StoredIncidentSummary[]>;
+  getDashboardMetrics(): Promise<DashboardMetrics>;
+  count(): Promise<number>;
 }

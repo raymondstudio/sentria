@@ -11,4 +11,12 @@
  * the IncidentRepository interface and re-export a new singleton here.
  */
 
-export { fileIncidentRepository as incidentStore } from '../storage/file-incident-repository';
+import { fileIncidentRepository } from '../storage/file-incident-repository';
+import { kvIncidentRepository } from '../storage/kv-incident-repository';
+import type { IncidentRepository } from '../storage/incident-repository';
+
+const useKv = !!process.env.KV_REST_API_URL;
+
+export const incidentStore: IncidentRepository = useKv 
+  ? kvIncidentRepository 
+  : fileIncidentRepository;

@@ -135,7 +135,7 @@ export class FileIncidentRepository implements IncidentRepository {
     ensureDirs();
   }
 
-  generateId(): string {
+  async generateId(): Promise<string> {
     ensureDirs();
     const meta = readMeta();
     meta.counter += 1;
@@ -144,16 +144,16 @@ export class FileIncidentRepository implements IncidentRepository {
     return `INC-${seq}`;
   }
 
-  save(analysis: IncidentAnalysis, priorityScore: number): void {
+  async save(analysis: IncidentAnalysis, priorityScore: number): Promise<void> {
     ensureDirs();
     writeEntry({ analysis, priorityScore });
   }
 
-  getById(id: string): IncidentAnalysis | null {
+  async getById(id: string): Promise<IncidentAnalysis | null> {
     return readEntry(id)?.analysis ?? null;
   }
 
-  list(filters?: ListFilters): ListResult {
+  async list(filters?: ListFilters): Promise<ListResult> {
     const page = filters?.page ?? 1;
     const limit = filters?.limit ?? 20;
 
@@ -193,10 +193,10 @@ export class FileIncidentRepository implements IncidentRepository {
     return { incidents: paged, total, pages };
   }
 
-  update(
+  async update(
     id: string,
     updates: { status?: IncidentStatus; notes?: string }
-  ): IncidentAnalysis | null {
+  ): Promise<IncidentAnalysis | null> {
     const entry = readEntry(id);
     if (!entry) return null;
 
@@ -220,7 +220,7 @@ export class FileIncidentRepository implements IncidentRepository {
     return analysis;
   }
 
-  getSummariesExcluding(excludeId: string): StoredIncidentSummary[] {
+  async getSummariesExcluding(excludeId: string): Promise<StoredIncidentSummary[]> {
     return listAllEntries()
       .filter((e) => e.analysis.incidentId !== excludeId)
       .map((e) => ({
@@ -232,7 +232,7 @@ export class FileIncidentRepository implements IncidentRepository {
       }));
   }
 
-  getDashboardMetrics(): DashboardMetrics {
+  async getDashboardMetrics(): Promise<DashboardMetrics> {
     const entries = listAllEntries();
     const analyses = entries.map((e) => e.analysis);
 
@@ -263,7 +263,7 @@ export class FileIncidentRepository implements IncidentRepository {
     };
   }
 
-  count(): number {
+  async count(): Promise<number> {
     return listAllEntries().length;
   }
 }

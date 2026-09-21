@@ -51,7 +51,7 @@ export default async function IncidentsPage({
   const search = params.search;
   const page = Math.max(1, Number(params.page ?? '1') || 1);
 
-  const result = incidentStore.list({ severity, type, status, search, page, limit: 25 });
+  const result = await incidentStore.list({ severity, type, status, search, page, limit: 25 });
 
   const hasFilters = !!(severity ?? type ?? status ?? search);
 

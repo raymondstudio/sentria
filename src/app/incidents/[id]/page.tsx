@@ -53,16 +53,17 @@ export default async function IncidentDetailPage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
-  const incident = incidentStore.getById(id);
+  const incident = await incidentStore.getById(id);
 
   if (!incident) {
     notFound();
   }
 
   const sev = SEVERITY_STYLES[incident.severity] ?? SEVERITY_STYLES[IncidentSeverity.LOW];
-  const relatedFull = incident.relatedIncidents
-    .map((rel) => ({ ...rel, incident: incidentStore.getById(rel.incidentId) }))
-    .filter((r) => r.incident !== null);
+  const detailedRelated = await Promise.all(
+    incident.relatedIncidents.map(async (rel) => ({ ...rel, incident: await incidentStore.getById(rel.incidentId) }))
+  );
+  const relatedIncidents = detailedRelated.filter((rel): rel is typeof rel & { incident: NonNullable<typeof rel['incident']> } => rel.incident !== null);
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100">
@@ -259,13 +260,13 @@ export default async function IncidentDetailPage({
           </SectionCard>
 
           <SectionCard title={`Related incidents (${incident.relatedIncidents.length})`}>
-            {relatedFull.length === 0 ? (
+            {relatedIncidents.length === 0 ? (
               <p className="text-sm text-slate-500">
                 No related incidents found. Similarity is assessed at submission time.
               </p>
             ) : (
               <div className="space-y-2.5">
-                {relatedFull.map((rel) => (
+                {relatedIncidents.map((rel) => (
                   <Link
                     key={rel.incidentId}
                     href={`/incidents/${rel.incidentId}`}

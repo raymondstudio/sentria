@@ -24,7 +24,7 @@ export async function GET(
       throw new AppError(ErrorCode.INVALID_INPUT, 400, 'Invalid incident ID');
     }
 
-    const incident = incidentStore.getById(id);
+    const incident = await incidentStore.getById(id);
     if (!incident) {
       throw new AppError(ErrorCode.NOT_FOUND, 404, `Incident ${id} not found`);
     }
@@ -63,7 +63,7 @@ export async function PATCH(
       throw new AppError(ErrorCode.VALIDATION_ERROR, 400, messages);
     }
 
-    const updated = incidentStore.update(id, parsed.data);
+    const updated = await incidentStore.update(id, parsed.data);
     if (!updated) {
       throw new AppError(ErrorCode.NOT_FOUND, 404, `Incident ${id} not found`);
     }

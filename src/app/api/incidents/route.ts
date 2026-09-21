@@ -38,7 +38,7 @@ export async function POST(request: NextRequest) {
       throw new AppError(ErrorCode.VALIDATION_ERROR, 400, 'The analyzed incident could not be saved.');
     }
 
-    incidentStore.save(parsed.data.incident, parsed.data.priorityScore);
+    await incidentStore.save(parsed.data.incident, parsed.data.priorityScore);
     return NextResponse.json({ incident: parsed.data.incident }, { status: 201 });
   } catch (error) {
     logError(error, 'POST /api/incidents');
@@ -68,7 +68,7 @@ export async function GET(request: NextRequest) {
       throw new AppError(ErrorCode.VALIDATION_ERROR, 400, messages);
     }
 
-    const result = incidentStore.list(params.data);
+    const result = await incidentStore.list(params.data);
 
     return NextResponse.json({
       incidents: result.incidents,

@@ -8,7 +8,7 @@ import { createErrorResponse, logError } from '@/lib/errors';
  */
 export async function GET() {
   try {
-    const metrics = incidentStore.getDashboardMetrics();
+    const metrics = await incidentStore.getDashboardMetrics();
     return NextResponse.json({ metrics });
   } catch (error) {
     logError(error, 'GET /api/dashboard');

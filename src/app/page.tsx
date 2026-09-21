@@ -43,8 +43,8 @@ function SeverityBadge({ severity }: { severity: string }) {
   );
 }
 
-export default function DashboardPage() {
-  const metrics = incidentStore.getDashboardMetrics();
+export default async function DashboardPage() {
+  const metrics = await incidentStore.getDashboardMetrics();
   const recentIncidents = metrics.recentIncidents.slice(0, 5);
 
   const topTypes = Object.entries(metrics.typeDistribution)

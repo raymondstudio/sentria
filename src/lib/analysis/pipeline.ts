@@ -102,7 +102,7 @@ export async function analyzeIncident(
   } = {}
 ): Promise<PipelineResult> {
   const startTime = Date.now();
-  const incidentId = incidentStore.generateId();
+  const incidentId = await incidentStore.generateId();
   const submittedAt = new Date();
 
   // Stage 1: Normalize text
@@ -148,7 +148,7 @@ export async function analyzeIncident(
   const summaryResult = await summaryPromise;
 
   // Stage 10: Find related incidents
-  const storedSummaries = incidentStore.getSummariesExcluding(incidentId);
+  const storedSummaries = await incidentStore.getSummariesExcluding(incidentId);
   const relatedIncidents = findRelatedIncidents(
     {
       normalizedText: normalized.normalized,
@@ -163,7 +163,7 @@ export async function analyzeIncident(
   const isDuplicate = relatedIncidents.some((r) => r.isDuplicate);
 
   if (relatedIncidents.length > 0) {
-    const topRelated = incidentStore.getById(relatedIncidents[0].incidentId);
+    const topRelated = await incidentStore.getById(relatedIncidents[0].incidentId);
     if (topRelated?.clusterId) {
       clusterId = topRelated.clusterId;
     } else if (relatedIncidents[0].similarity >= 0.65) {
@@ -245,7 +245,7 @@ export async function analyzeIncident(
   };
 
   if (options.persist !== false) {
-    incidentStore.save(analysis, priorityScore);
+    await incidentStore.save(analysis, priorityScore);
   }
 
   return {
@@ -267,12 +267,12 @@ export async function analyzeIncident(
     relatedIncidents,
     clusterAssignment: {
       clusterId: clusterId ?? null,
-      isNewCluster: clusterId !== undefined && !relatedIncidents.some((r) => {
-        const rel = incidentStore.getById(r.incidentId);
+      isNewCluster: clusterId !== undefined && !(await Promise.all(relatedIncidents.map(async (r) => {
+        const rel = await incidentStore.getById(r.incidentId);
         return rel?.clusterId === clusterId;
-      }),
+      }))).some(Boolean),
       clusterSize: clusterId
-        ? incidentStore.list().incidents.filter((i) => i.clusterId === clusterId).length
+        ? (await incidentStore.list()).incidents.filter((i) => i.clusterId === clusterId).length
         : 0,
     },
     processingDurationMs,
