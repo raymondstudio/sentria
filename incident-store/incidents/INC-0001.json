@@ -1,0 +1,52 @@
+{
+  "analysis": {
+    "incidentId": "INC-0001",
+    "createdAt": "2026-09-21T14:21:11.514Z",
+    "updatedAt": "2026-09-21T14:21:11.514Z",
+    "originalReport": "[Analyst report]\nI got a message from my bank customer service telling my account has been suspected of suspicious activity and they asked me to click a link to verify the account details\r\n\r\nthe link: http://044c7ce.wcomhost.com/admin/customer_center/customer-IDPP00C993/myaccount/signin\r\nafter clicking, 5mins later my account email was changed and I was logged out then a huge amount was sent to an unknown account.",
+    "inputSource": "TEXT",
+    "source": "USER_REPORT",
+    "evidence": [],
+    "incidentType": "OTHER",
+    "typeConfidence": 0.3,
+    "severity": "LOW",
+    "severityScore": 0,
+    "severityReasons": [
+      "Incident does not exhibit high-risk indicators; assigning LOW severity"
+    ],
+    "summary": "A user reportedly clicked a link from a message",
+    "technicalIndicators": [
+      {
+        "type": "URL",
+        "value": "http://044c7ce.wcomhost.com/admin/customer_center/customer-IDPP00C993/myaccount/signin",
+        "context": "...me to click a link to verify the account details  the link: http://044c7ce.wcomhost.com/admin/customer_center/customer-IDPP00C993/myaccount/signin after clicking, 5mins later my account email was changed an...",
+        "confidence": 0.95,
+        "isMalicious": true
+      },
+      {
+        "type": "DOMAIN",
+        "value": "044c7ce.wcomhost.com",
+        "context": "Extracted from URL: http://044c7ce.wcomhost.com/admin/customer_center/customer-IDPP00C993/myaccount/signin",
+        "confidence": 0.95,
+        "isMalicious": false
+      }
+    ],
+    "piiDetections": [],
+    "sanitizedReport": "[Analyst report]\nI got a message from my bank customer service telling my account has been suspected of suspicious activity and they asked me to click a link to verify the account details\n\nthe link: http://044c7ce.wcomhost.com/admin/customer_center/customer-IDPP00C993/myaccount/signin\nafter clicking, 5mins later my account email was changed and I was logged out then a huge amount was sent to an unknown account.",
+    "relatedIncidents": [],
+    "recommendedRoute": "SOC",
+    "routingReasoning": [
+      "Unclassified report forwarded to SOC for manual review",
+      "Analyst should review and reclassify as needed"
+    ],
+    "recommendedAction": "1. Review the report manually and reclassify into the appropriate incident type.\n2. Gather additional information from the reporter.\n3. Assess whether this is a real incident or a false positive.\n4. Assign the correct response team based on further investigation.\n5. Block the following indicators at network and email security controls: http://044c7ce.wcomhost.com/admin/customer_center/customer-IDPP00C993/myaccount/signin",
+    "status": "NEW",
+    "statusHistory": [
+      {
+        "status": "NEW",
+        "timestamp": "2026-09-21T14:21:11.514Z"
+      }
+    ]
+  },
+  "priorityScore": 2
+}

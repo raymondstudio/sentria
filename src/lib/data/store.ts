@@ -15,7 +15,7 @@ import { fileIncidentRepository } from '../storage/file-incident-repository';
 import { kvIncidentRepository } from '../storage/kv-incident-repository';
 import type { IncidentRepository } from '../storage/incident-repository';
 
-const useKv = !!process.env.KV_REST_API_URL;
+const useKv = !!(process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL);
 
 export const incidentStore: IncidentRepository = useKv 
   ? kvIncidentRepository 
