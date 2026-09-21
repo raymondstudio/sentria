@@ -153,7 +153,7 @@ Sentria is implemented as a full stack web application using Next.js and TypeScr
                     Structured incident
 ```
 
-The frontend and server application are built with Next.js, React, and TypeScript. A file-system repository provides persistent JSON storage (automatically routed to `/tmp` in serverless environments like Vercel), while Zod is used to validate data at application boundaries.
+The frontend and server application are built with Next.js, React, and TypeScript. Data is persistently stored using Upstash Redis for serverless cloud environments and falls back to local file-system JSON storage for local development. Zod is used to validate data at application boundaries.
 
 The Gemini integration uses Google's current Gen AI SDK rather than constructing Gemini REST requests manually.
 

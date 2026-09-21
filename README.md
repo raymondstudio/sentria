@@ -130,4 +130,4 @@ Sentria is designed to reduce that manual triage burden by turning unstructured 
 
 ## Vercel Deployment
 
-Sentria runs on Vercel out-of-the-box. When deployed to a serverless Vercel environment, the incident storage logic automatically redirects to `/tmp` to bypass read-only filesystem restrictions. Note that this provides ephemeral storage suitable for hackathon demonstrations; for a permanent production deployment, the `IncidentRepository` interface can easily be backed by PostgreSQL or Redis.
+Sentria runs on Vercel out-of-the-box. For permanent persistent storage in production, it integrates with Upstash Redis (Serverless). When running locally without environment variables, it automatically falls back to a file-system JSON store (`.incident-store/`).
